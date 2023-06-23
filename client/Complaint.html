@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="complaintstyle.css">
+    <title>Apply and View Complaints</title>
+</head>
+
+<body>
+    <div class="complaints-container">
+        <h2>Hostel Management System</h2>
+        <h3>Apply for Complaint</h3>
+        <form action="/apply-complaint" method="post">
+            <div class="input-container">
+                <label for="complaint">Complaint:</label>
+                <textarea id="complaint" name="complaint" rows="4" required></textarea>
+            </div>
+            <div class="input-container">
+                <button type="submit">Submit Complaint</button>
+            </div>
+        </form>
+
+        <h3>View Complaints</h3>
+        <table class="complaints-table">
+            <thead>
+                <tr>
+                    <th>Complaint</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example data -->
+                <tr>
+                    <td>Broken faucet in the bathroom</td>
+                    <td>2023-06-20</td>
+                    <td>Pending</td>
+                </tr>
+                <tr>
+                    <td>Noisy neighbors</td>
+                    <td>2023-06-18</td>
+                    <td>Resolved</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Appleavestyle.css">
+    <title>Apply and View Leave</title>
+</head>
+<body>
+    <div class="leave-container">
+        <h2>Hostel Management System</h2>
+        <h3>Apply for Leave</h3>
+        <form action="/apply-leave" method="post">
+            <div class="input-container">
+                <label for="leave-reason">Reason for Leave:</label>
+                <input type="text" id="leave-reason" name="leave_reason" required>
+            </div>
+            <div class="input-container">
+                <label for="from-date">From Date:</label>
+                <input type="date" id="from-date" name="from_date" required>
+            </div>
+            <div class="input-container">
+                <label for="to-date">To Date:</label>
+                <input type="date" id="to-date" name="to_date" required>
+            </div>
+            <div class="input-container">
+                <button type="submit">Apply for Leave</button>
+            </div>
+        </form>
+
+        <h3>View Leaves</h3>
+        <table class="leave-table">
+            <thead>
+                <tr>
+                    <th>Reason</th>
+                    <th>From Date</th>
+                    <th>To Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example data -->
+                <tr>
+                    <td>Family Event</td>
+                    <td>2023-06-10</td>
+                    <td>2023-06-12</td>
+                    <td>Approved</td>
+                </tr>
+                <tr>
+                    <td>Medical</td>
+                    <td>2023-05-20</td>
+                    <td>2023-05-22</td>
+                    <td>Pending</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

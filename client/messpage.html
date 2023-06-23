@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="messpagestyle.css">
+    <title>Apply for Mess</title>
+</head>
+
+<body>
+    <div class="mess-container">
+        <h2>Hostel Management System</h2>
+        <h3>Apply for Mess</h3>
+        <form action="/apply-mess" method="post">
+            <div class="input-container">
+                <label for="mess">Select Mess:</label>
+                <select id="mess" name="mess" required>
+                    <option value="north-indian">North Indian</option>
+                    <option value="south-indian">South Indian</option>
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="non-vegetarian">Non-Vegetarian</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <button type="submit">Apply for Mess</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

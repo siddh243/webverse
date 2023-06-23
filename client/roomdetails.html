@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="roomdetailstyle.css">
+    <title>Apply and View Room Details</title>
+</head>
+
+<body>
+    <div class="room-details-container">
+        <h2>Hostel Management System</h2>
+        <h3>Apply for Room</h3>
+        <form action="/apply-room" method="post">
+            <div class="input-container">
+                <label for="room-type">Room Type:</label>
+                <select id="room-type" name="room-type" required>
+                    <option value="single">Single</option>
+                    <option value="double">Double</option>
+                </select>
+            </div>
+            <div class="input-container">
+                <button type="submit">Apply for Room</button>
+            </div>
+        </form>
+
+        <h3>View Room Details</h3>
+        <table class="room-details-table">
+            <thead>
+                <tr>
+                    <th>Room Number</th>
+                    <th>Room Type</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example data -->
+                <tr>
+                    <td>101</td>
+                    <td>Single</td>
+                    <td>Occupied</td>
+                </tr>
+                <tr>
+                    <td>102</td>
+                    <td>Double</td>
+                    <td>Available</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
